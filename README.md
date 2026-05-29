@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Neon Breakout (TypeScript + React)
 
-# Run and deploy your AI Studio app
+一個使用 Vite、React 與 TypeScript 撰寫的單頁打磚塊遊戲。專案為純前端應用，使用 HTML5 Canvas 與 Web Audio。
 
-This contains everything you need to run your app locally.
+## 本地開發
 
-View your app in AI Studio: https://ai.studio/apps/62e2e32d-46d0-49ce-bf3c-4ecd50eada48
+需求：已安裝 Node.js
 
-## Run Locally
+1. 安裝相依性：
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+```
 
+2. 啟動開發伺服器：
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm run dev
+```
+
+3. 進入瀏覽器檢視：
+
+打開 http://localhost:3000
+
+若要產生 production build：
+
+```bash
+npm run build
+```
+
+---
+
+保留檔案：`src/`、`assets/`、`index.html`、`tsconfig.json` 等。已移除 AI Studio 的設定檔與範例金鑰檔案。
+
+## GitHub Pages（透過 GitHub Actions 自動部署）
+
+此專案已包含 GitHub Actions workflow，會在 push 到 `main` 時自動建置並將 `dist/` 發佈到 `gh-pages` 分支。若要使用：
+
+1. 將此 repo push 到 GitHub（預設分支為 `main`）。
+2. 確認 GitHub Actions 成功建置後，前往 repository Settings → Pages，將來源設為 `gh-pages` 分支（若尚未自動設定）。
+
+發佈後，網站路徑會是 `https://<your-username>.github.io/__BLOCK__/`。

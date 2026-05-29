@@ -1,6 +1,0 @@
-{
-  "name": "打磚塊遊戲",
-  "description": "使用 React、TypeScript 與 HTML5 Canvas 打造的經典打磚塊遊戲，支援關卡設定、道具掉落、音效回饋及最高得分紀錄。",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
